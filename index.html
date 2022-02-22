@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="portfolioApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Barry Prendergast</title>
+        <meta name="description" content="CV Barry Prendergast, Front-End Developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/newMain.css">
+        <!-- <script src="js/modernizr-2.8.3.min.js"></script> -->
+        <script type="text/JavaScript" src="js/angular.min.js"></script>
+        <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
+        <script type="text/JavaScript" src="js/app.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body ng-controller="portfolioController as prtfCtrl">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container center row clearfix">
+                <div class="title col-sm-6">
+                    <h1>{{pdata.name}}</h1>
+                    <h2>{{pdata.title}}</h2>
+                </div>
+                <div class="contact-header col-sm-6 clearfix">
+                    <ul class="contact-links row">
+                        <li class="linkedin col-md-3 col-xs-3">
+                            <a ng-href="{{pdata.linkedin}}" target="_blank">
+                                Linked <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li class="gmail col-md-3 col-xs-3">
+                            <a mg-href="mailto:{{pdata.email}}" target="_blank">
+                                <i class="fa fa-google"></i> mail
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </header>
+        <article class="container center">       
+            <section class="personal clearfix">                  
+                <h3>Personal Info</h3>
+                <div class="col-md-12">
+                    <figure class="col-sm-3 center">
+                        <img class="img-responsive" ng-src="{{pdata.img}}" alt="">
+                    </figure>                       
+                    <div class="details">
+                        <p>Hi, I'm Barry, I am a <strong>Senior Front End Developer</strong>. I have been working on the front end of websites for many years and really enjoy it. I love writing clean efficient code and keeping up to date with front end trends. I have more than 10 years experience working with <strong>HTML</strong> and <strong>CSS</strong> and more recently adding <strong>Javascript</strong> and <strong>Angular.js</strong> to my skill set, as well as <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>LESS/SCSS</strong>, <strong>Bootstrap</strong>, <strong>GIT</strong><strong>Node(Gulp/Grunt).</strong> Creating pixel perfect responsive UX layouts are what I most enjoy working on as well as investigating new techniques like css grid and investigating frameworks like Veu.js, Reactjs and Angular.</p>
+                    </div>
+                </div>                                
+            </section>
+            <section class="skills">
+                <h3 class="">Skills
+                    <span class="pull-right">
+                        <i class="fa fa-html5"></i>
+                        <i class="fa fa-css3"></i>
+                        <i class="jquery"></i>
+                    </span>    
+                </h3>
+                <ul class="inner">
+                    <li ng-repeat="skill in pdata.skills">{{skill}}</li>
+                </ul>                  
+            </section>
+            <section class="experience">
+                <h3>Career History</h3>
+                <div class="inner" ng-controller="empController as empCtrl">
+                    <div ng-repeat="empresa in empData.empresas">
+                        <h4>{{empresa.name}} 
+                            <small>
+                                <a ng-href="http:{{empresa.url}}" target="_blank">{{empresa.url}}</a>
+                            </small>
+                        </h4>
+                        <p>{{empresa.date}}</p>
+                        <p ng-repeat="para in empresa.description">{{para}}</p>
+                        <small class="text-right showBtn">
+                            <span>hide examples </span>
+                        </small>
+                        <div class="examples">
+                            <ul class="row">
+                                <li ng-repeat="example in empresa.examples"> 
+                                    <figure>
+                                        <i class="fa fa-times"></i>
+                                        <img class="img-responsive" ng-src="{{example.image}}" alt="Keepunto">
+                                        <figcaption>
+                                            <h5>{{example.name}}</h5>
+                                            <p>{{example.description}}</p>
+                                            <small>{{example.skills}}</small>
+                                            <a href="http://{{example.link}}" target="_blank" title="keepunto">{{example.link}}</a>
+                                            <p>more info</p>
+                                        </figcaption>                             
+                                    </figure>                              
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Education</h3>
+                <div class="inner">
+                    <ul>
+                        <li ng-repeat="course in pdata.education">
+                            <h4>{{course.title}}</h4>
+                            <small>{{course.duration}}</small>
+                            <p ng-repeat="data in course.discription">{{data}}</p>
+                        </li>
+                    </ul>          
+                </div>
+            </section>
+            <section>
+                <h3>Interests</h3>
+                <div class="inner">
+                    <p>{{pdata.interests}}</p>
+                </div>
+            </section>
+            <!-- <section>
+                <h3>Contact</h3>
+                <div class="inner" ng-controller="formCtrl">
+                    <form>
+                        <fieldset>
+                            <div>
+                                <label>
+                                    <input type="text" placeholder="Name" name="name" ng-model="myForm.name" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="email" placeholder="Email" name="email" ng-model="myForm.email.$error" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="text" placeholder="Subject" name="subject" ng-model="myForm.subject.$error">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="text" placeholder="Message" name="message" ng-model="user.message.$error" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <button type="submit" ng-show="myForm()" ng-click="">Send</button>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <span>{{formCtrl.user.email}}</span>
+                    </form>
+                    <div>
+                        <p>name = {{formCtrl.user.name}}</p>
+                        <p>email = {{formCtrluser.email}}</p>
+                        <p>{{formCtrl.user.message}}</p>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section data-role="main">
+                <h3>Contactar</h3>
+                <div  ng-controller="formController as formCtrl">     
+                    <a href="#" class="btn btn-primary" ng-click="muestra()">{{txtBtn}}</a>
+                    <div ng-show="capa">
+                        <h5>{{formCtrl.tittle}}</h5>
+                        <form class="form-horizontal" name="formulario">
+                            <div class="form-group">
+                                <label for="email" class="col-sm-2 control-label">Correo electrónico</label>
+                                <div class="col-md-5">
+                                    <input type="email" class="form-control" ng-model="model.email"  name="email" placeholder="Introduzca su email..." required/>
+                                      <span ng-show="formulario.email.$error.required">*Campo obligatorio.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 control-label">Nombre</label>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control"  ng-model="model.name" ng-minlength="5"  name="name" placeholder="Su nombre..." required/>
+                                      <span ng-show="formulario.name.$error.required">*Campo obligatorio.</span>
+                                       <span class="error" ng-show="formulario.name.$error.minlength">Debe ser superior a 5 caracteres!</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="apel" class="col-sm-2 control-label">apellido</label>
+                                    <div class="col-md-5">
+                                    <input type="text" class="form-control"  ng-model="model.apel"  name="apel" placeholder="Su apellido..." required/>
+                                      <span ng-show="formulario.apel.$error.required">*Campo obligatorio.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-md-5">
+                                    <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox" ng-model="model.check">recordar
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" ng-click="submitForm(model)" ng-show="formulario.$valid"  class="btn btn-default">Enviar datos</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div ng-controller="otroController">
+                    <div>
+                        <h5>{{tittle}}</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus aut temporibus perspiciatis, cumque quidem repudiandae minima architecto ex qui rem voluptas iste autem, voluptates excepturi, iusto adipisci, hic consequatur!</p> 
+                    </div> 
+                    <a href="#" class="btn btn-primary" ng-click="muestraStorage()">Mostrar localStorage</a>
+
+                    <p ng-show="capa">
+                    {{storageService.length}}
+                        {{jitijander}}
+                    </p>
+
+                    <hr>
+                    <a href="#" class="btn btn-primary" ng-click="deleteStorage()">Borrar localStorage</a>              
+                </div>
+            </section> -->
+        </article>
+        <footer>
+            <div class="container center" ng-include="'includes/footer.html'"></div>
+        </footer>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
