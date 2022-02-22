@@ -1,0 +1,147 @@
+[
+    {
+        "name": "Barry Prendergast",
+        "title": "Front-End Developer",
+        "email": "barryprendergast78@gmail.com",
+        "likedin": "http://es.linkedin.com/in/BarryPdrgst",
+        "skills": [
+            "PHOTOSHOP",
+            "HTML5",
+            "XHTML",
+            "CSS(3)",
+            "LESS/SCSS",
+            "REST",
+            "MySQL",
+            "JQuery",
+            "NODE.js (Gulp/Grunt)",
+            "ANGULAR.js",
+            "Cross Browser Compatibility",
+            "Responsive Web Design",
+            "GIT",
+            "JIRA",
+            "SLACK",
+            "AGILE"
+        ],
+        "img": "img/me.png",
+        "education": [
+            {
+			    "title": "Teamtreehouse.com (online education site for web professionals)",
+			    "duration": "Nov 2013 – Nov 2014 ",
+			    "discription": [
+				"Front-end Web Development: HTML5, CSS3",
+				"Programming: JavaScript Foundations, JQuery Basics, Ajax Basics, Console Foundations, Accessibility,"
+			    ]
+		    },
+            {
+                "title": "Ondas Escolares. Madrid",
+                "duration": "October 2012",
+                "discription": ["Web Design and development of web applications with HTML5,CSS3 and  jQuery"]
+            },
+            {
+                "title": "Centro de enseñanza Adams. Madrid.",
+                "duration": "October-February 2008",
+                "discription": ["Web design and multimedia. Photoshop CS2, Dreamweaver 8, Flash 8, Fireworks 8, HTML and script languages"]
+            }
+        ],
+		"interests": "When I'm not working on personal web projects or helping friends with theirs, I like to unwind playing guitar, mainly punk/rock music very loudly in a local band."
+
+    },
+    {
+        "empresas": [
+            {
+                "name": "Arcmedia",
+                "date": "July 2017 - July 2019",
+                "url": "www.arcmedia.ch",
+                "description": ["Front End Developer HTML5, CSS3/LESS, Jquery. Code layouts for web applications  and  mobile devices/Responsive Design with HTML5, CSS3/LESS y Jquery. Mainly on the Keepunto.com project. Working with frameworks like Bootstrap, Yii PHP Framework. GitVCS."],
+                "examples": [
+                    {
+                        "name": "Arcmedia",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
+                        "skills": "html5,css3,jQuery,Magento",
+                        "image": "img/arcmedia/arcmediax350.png",
+                        "link": "www.arcmedia.ch"
+                    },
+                    {
+                        "name": "on-nicotine",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/arcmedia/on-nicotinex350.png",
+                        "link": "www.on-nicotine.com"
+                    }
+                ]
+            },
+            {
+                "name": "Tessi Graddo II",
+                "date": "March 2016 - July 2017",
+                "url": "www.tessi.eu/es",
+                "description": ["Front End Developer HTML5, CSS3/LESS, Jquery. Code layouts for web applications  and  mobile devices/Responsive Design with HTML5, CSS3/LESS y Jquery. Mainly on the Keepunto.com project. Working with frameworks like Bootstrap, Yii PHP Framework. GitVCS."]
+            },
+            {
+                "name": "CECA Bank",
+                "date": "April 2015 - March 2016",
+                "url": "www.ceca.es",
+                "description": ["Front End Developer HTML5, CSS3/LESS, Jquery. Code layouts for web applications  and  mobile devices/Responsive Design with HTML5, CSS3/LESS y Jquery. Mainly on the Keepunto.com project. Working with frameworks like Bootstrap, Yii PHP Framework. GitVCS."]
+            },
+            {
+                "name": "Vivocom",
+                "date": "september 2014 - march 2015",
+                "url": "www.vivocom.eu",
+                "description": ["Front End Developer HTML5, CSS3/LESS, Jquery. Code layouts for web applications  and  mobile devices/Responsive Design with HTML5, CSS3/LESS y Jquery. Mainly on the Keepunto.com project. Working with frameworks like Bootstrap, Yii PHP Framework. GitVCS."],
+                "examples": [
+                    {
+                        "name": "Keepunto",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/keepunto/keepunto1.png",
+                        "link": "www.keepunto.com"
+                    },
+                    {
+                        "name": "Scool Zone",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the Yii php CMV framework as well as bootstrap css framework and managed through GitHub VCS",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/keepunto/sCool-Zone-Keepunto.png",
+                        "link": "www.keepunto.com"
+                    }
+                ]
+            },
+            {
+                "name": "Vocento",
+                "date": "May 2013 – july 2014",
+                "url": "www.vocento.com",
+                "description": [
+                    "Front End Developer HTML5, CSS3/LESS, Jquery.",
+                    "Collaborating in two of the media groups’ web projects, GUAPABOX and  ABC FOTO. Part of the team of 3 front end developers working on the general redesign of the groups 11 regional news websites."
+                ],
+                "examples": [
+                    {
+                        "name": "Guapabox",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/vocento/Guapabox1.png",
+                        "link": "www.guapabox.com"
+                    },
+                    {
+                        "name": "Redesign regional news sites",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/vocento/Redesign1.png",
+                        "link": "www.elcorreo.com"
+                    },
+                    {
+                        "name": "ABCFoto",
+                        "description": "Code layouts from designer (psd) in HTML 5, CSS 3 and jquery. As the only front end developer I had to handle all the front end issues and modificaciones. The project is built on the bootstrap css framework",
+                        "skills": "html5,css3,jquery",
+                        "image": "img/vocento/abcfoto1.png",
+                        "link": "abcfoto.abc.es"
+                    }
+                ]
+            },
+            {
+                "name": "Grupo Mercantis",
+                "date": "May 2008 – November 2011",
+                "url": "www.grupomercantis.com",
+                "description": ["HTML, CSS, Wordpress, Oscommerce, phpbb. Web editing and maintenance work in a team of web developers and programmers. Localization Work: Adapting websites en 12 languages  editing html/css, flash  (texts, images, animations) flash banners, image editing."]
+            }
+        ]
+    }
+]
