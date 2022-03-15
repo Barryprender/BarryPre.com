@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Barry Prendergast</title>
         <meta name="description" content="Hi, I'm Barry, I am a Senior Front End Developer. I have been working on the front end of websites for many years and really enjoy it. I love writing clean efficient code and keeping up to date with front end trends.">
+        <meta name="author" content="Barry Prendergast">
+        <meta name="keywords" content="Front end developer, HTML, CSS, JavaScript, Angular, web developer, web development">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="Barry Prendergast | Front end developer">
         <meta property="og:type" content="Portfolio">
@@ -75,7 +77,7 @@
                 <h3>Personal Info</h3>
                 <div class="col-md-12">
                     <figure class="col-sm-3 center">
-                        <img class="img-responsive" ng-src="{{pdata.img}}" alt="">
+                        <img class="img-responsive" ng-src="{{pdata.img}}" alt="Barry Prendergast" title="Barry Prendergast">
                     </figure>                       
                     <div class="details">
                         <p>Hi, I'm Barry, I am a <strong>Senior Front End Developer</strong>. I have been working on the front end of websites for many years and really enjoy it. I love writing clean efficient code and keeping up to date with front end trends. I have more than 10 years experience working with <strong>HTML</strong> and <strong>CSS</strong> and more recently adding <strong>Javascript</strong> and <strong>Angular.js</strong> to my skill set, as well as <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>LESS/SCSS</strong>, <strong>Bootstrap</strong>, <strong>GIT</strong><strong>Node(Gulp/Grunt).</strong> Creating pixel perfect responsive UX layouts are what I most enjoy working on as well as investigating new techniques like css grid and investigating frameworks like Veu.js, Reactjs and Angular.</p>
@@ -113,12 +115,12 @@
                                 <li ng-repeat="example in empresa.examples"> 
                                     <figure>
                                         <i class="fa fa-times"></i>
-                                        <img class="img-responsive" ng-src="{{example.image}}" alt="Keepunto">
+                                        <img class="img-responsive" ng-src="{{example.image}}" alt="{{example.name}}">
                                         <figcaption>
                                             <h5>{{example.name}}</h5>
                                             <p>{{example.description}}</p>
                                             <small>{{example.skills}}</small>
-                                            <a href="http://{{example.link}}" target="_blank" title="keepunto">{{example.link}}</a>
+                                            <a href="http://{{example.link}}" target="_blank" title="{{example.name}}">{{example.link}}</a>
                                             <p>more info</p>
                                         </figcaption>                             
                                     </figure>                              
